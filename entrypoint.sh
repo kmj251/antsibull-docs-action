@@ -25,3 +25,5 @@ chown -R root:root $GITHUB_WORKSPACE
 antsibull-docs collection --use-current --squash-hierarchy --dest-dir ./docsrc/source $namespace.$collection
 #sphinx-build /tmp/docsrc/source ./docs
 sphinx-build ./docsrc/source ./docs
+
+git add docs/*
