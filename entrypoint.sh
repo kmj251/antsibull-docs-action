@@ -12,4 +12,4 @@ echo "::set-output name=time::$time"
 
 echo "::set-output name=time::$ansiblepath"
 
-ansible-galaxy collection install git+file://${$GITHUB_WORKSPACE}/.git
+ansible-galaxy collection install git+file://$GITHUB_WORKSPACE/.git
