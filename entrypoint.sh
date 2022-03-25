@@ -15,5 +15,5 @@ echo "::set-output name=time::$ansiblepath"
 namespace=$(awk '/^namespace/ {print $2}' $GITHUB_WORKSPACE/galaxy.yml)
 collection=$(awk '/^name:/ {print $2}' $GITHUB_WORKSPACE/galaxy.yml)
 ansible-galaxy collection install git+file://$GITHUB_WORKSPACE/.git
-antsibull-docs collection --use-current --squash-hierarchy --dest-dir ./docsrc/source $namespace.$collection
-sphinx-build ./docsrc/source ./docs
+antsibull-docs collection --use-current --squash-hierarchy --dest-dir /tmp/docsrc/source $namespace.$collection
+sphinx-build /tmp/docsrc/source ./docs
