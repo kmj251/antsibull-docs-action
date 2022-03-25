@@ -2,7 +2,8 @@
 FROM quay.io/ansible/ansible-runner
 
 RUN python3 -m pip install antsibull
-RUN yum -y install python-is-python3
+RUN echo "sslverify=false" >> /etc/yum.conf
+RUN yum -y install python2
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
