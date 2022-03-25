@@ -1,5 +1,5 @@
 #!/bin/sh -l
-
+id
 time=$(date)
 ansiblepath=$(which ansible)
 antsibullpath=$(which antsibull-docs)
