@@ -4,7 +4,7 @@ id
 time=$(date)
 ansiblepath=$(which ansible)
 antsibullpath=$(which antsibull-docs)
-echo "Hello $1"
+#echo "Hello $1"
 echo "$ansiblepath"
 echo "$antsibullpath"
 echo "$GITHUB_WORKSPACE"
