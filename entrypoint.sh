@@ -1,4 +1,5 @@
 #!/bin/sh -l
+ls -lart $GITHUB_WORKSPACE
 id
 time=$(date)
 ansiblepath=$(which ansible)
