@@ -1,7 +1,9 @@
 #!/bin/sh -l
 
-echo "Hello $1"
 time=$(date)
-echo "::set-output name=time::$time"
 ansiblepath=$(which ansible)
+echo "Hello $1"
+echo "$ansiblepath"
+echo "::set-output name=time::$time"
+
 echo "::set-output name=time::$ansiblepath"
