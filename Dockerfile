@@ -1,7 +1,7 @@
 # Container image that runs your code
 FROM python:3.7-slim
 
-RUN python3 -m pip install antsibull ansible
+RUN python3 -m pip install antsibull ansible --no-cache-dir
 # RUN yum -y install python3-pip
 # RUN pip install --upgrade pip \ 
 #     && pip install ansible
