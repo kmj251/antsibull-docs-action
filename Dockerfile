@@ -3,7 +3,7 @@ FROM ubuntu:bionic
 
 RUN apt update \
     # && apt install -y software-properties-common \
-    && apt install -y python-is-python3 python3 python3-pip git locales locales-all git
+    && apt install -y python python3 python3-pip git locales locales-all git
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
 RUN python3 -m pip install antsibull ansible sphinx_rtd_theme --no-cache-dir
