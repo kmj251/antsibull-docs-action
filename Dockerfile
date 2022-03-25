@@ -1,9 +1,10 @@
 # Container image that runs your code
-FROM centos:7
-RUN echo "LANG=C.UTF-8" > /etc/default/locale
-RUN echo "sslverify=false" >> /etc/yum.conf
-RUN yum -y install python3 python3-pip python3-wheel
-RUN pip3 install ansible antsibull
+FROM python:3.7-slim
+
+RUN python3 -m pip install antsibull
+# RUN yum -y install python3-pip
+# RUN pip install --upgrade pip \ 
+#     && pip install ansible
 
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
