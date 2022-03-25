@@ -2,6 +2,7 @@
 FROM quay.io/ansible/ansible-runner
 
 RUN python3 -m pip install antsibull
+RUN apt install python-is-python3
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
