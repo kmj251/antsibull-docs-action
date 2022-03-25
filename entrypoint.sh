@@ -8,6 +8,7 @@ echo "$ansiblepath"
 echo "$antsibullpath"
 echo "$GITHUB_WORKSPACE"
 echo "$GITHUB_SERVER_URL"
+echo "$GITHUB_REPOSITORY"
 ls -lrt $GITHUB_WORKSPACE
 echo "::set-output name=time::$time"
 
