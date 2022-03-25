@@ -3,5 +3,5 @@
 echo "Hello $1"
 time=$(date)
 echo "::set-output name=time::$time"
-
-echo "$(which ansible)"
+ansiblepath=$(which ansible)
+echo "::set-output name=time::$ansiblepath"
