@@ -1,5 +1,5 @@
 #!/bin/bash
-
+pip3 list
 my_github_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
 
 namespace=$(awk '/^namespace/ {print $2}' $GITHUB_WORKSPACE/galaxy.yml)
