@@ -1,10 +1,3 @@
-# Antsibull Docs Github Action
-
-This is a very simple GitHub Action to generate Ansible Collection documentation.
-
-As show in the GitHub Workflow code below, this can be combined with a GitHub Action to deploy GitHub Pages.
-## Example Usage
-```
 ---
 name: Build Documentation and Deploy to Github Pages
 on:
@@ -48,7 +41,3 @@ jobs:
       - name: Cleaning up actions_github_pages directory that are older than 5 minutes.
         run: |
           find /home/gitactions/ -name "actions_github_pages*" -maxdepth 1 -type d -mmin +5 -exec rm -rf {} \;
-```
-
-### Disclaimer
-This is a side project and may not have time to add enhancements, but I will do my best to fix any bugs that are encountered.
