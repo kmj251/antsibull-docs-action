@@ -7,6 +7,7 @@ collection=$(awk '/^name:/ {print $2}' $GITHUB_WORKSPACE/galaxy.yml)
 ls -ralt $GITHUB_WORKSPACE/.git
 ansible-galaxy collection install git+file://$GITHUB_WORKSPACE/.git
 chown -R root:root $GITHUB_WORKSPACE
+mkdir -p ./docsrc/source
 antsibull-docs collection --use-current --squash-hierarchy --dest-dir ./docsrc/source $namespace.$collection
 
 sphinx-build ./docsrc/source ./docs
