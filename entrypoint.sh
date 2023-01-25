@@ -13,4 +13,4 @@ antsibull-docs collection --use-current --squash-hierarchy --dest-dir ./docsrc/s
 sphinx-build ./docsrc/source ./docs
 
 echo "Running git add"
-git add ./docs/*
+git add -f ./docs/*
