@@ -6,7 +6,7 @@ on:
 
 jobs:
   actions-tagger:
-    runs-on: [ ubuntu-latest, self-hosted ]
+    runs-on: ubuntu-latest
     steps:
       - uses: Actions-R-Us/actions-tagger@latest
         with:
